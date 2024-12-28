@@ -1,124 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
 
 main {
-    margin: 50px 60px;
-    /* margin: 50px 10px 50px 60px; */
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    gap: 1.5em;
-    justify-content: flex-start;
+  /* margin: 50px 10px 50px 60px; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
-.content {
-    display: grid;
-    gap: 1.5em;
-}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  /* margin: 36px; */
+  padding: 50px 60px;
+  display: flex;
+  justify-content: space-between;
 
-.content a {
+  .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  a {
     text-decoration: none;
     color: #000;
-}
+  }
 
-.content h1 {
+  h1 {
     font-size: 25px;
-    color: #1E1E1E;
-}
+    color: #1e1e1e;
+  }
 
-.content h4 {
+  h4 {
     text-align: end;
-    color: #1E1E1E;
+    color: #1e1e1e;
     text-decoration: underline;
+  }
 }
 
 section {
-    background-color: #F5F5F5;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-section p {
+  p {
     margin: 15px 30px;
     font-size: 18px;
-}
+  }
 
-section:hover {
+  &:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .welcome {
-    height: 100vh;
-    /* background: linear-gradient(45deg, #003300 0%, #1E1E1E 35%, #5b453a 100%); */
-    background-image: url("../images/bg.jpg");
-    background-repeat: no-repeat;
-    /* background-size: 150% 150%; */
-    /* animation: color 12s ease-in-out infinite; */
-    color: #F5F5F5;
-    /* color: #000; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
+  /* background: linear-gradient(45deg, #003300 0%, #1E1E1E 35%, #5b453a 100%); */
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 1200px;
+  /* background-size: 150% 150%; */
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 .welcome-content {
-    backdrop-filter: blur(100px);
-    border-radius: 15px;
-    color: #F5F5F5;
-    max-width: 800px;
-    padding: 0 20px;
+  backdrop-filter: blur(100px);
+  border-radius: 15px;
+  color: #f5f5f5;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
-.welcome h1 {
+.welcomeContainer {
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.welcome {
+  h1 {
     font-family: "Exo 2", serif;
     font-size: 3rem;
     margin-bottom: 20px;
     font-weight: bold;
-}
+  }
 
-.welcome p {
+  p {
     /* color: #000; */
     font-size: 1.7rem;
     margin-bottom: 30px;
+  }
 }
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
-    .welcome {
-        background-image: url("../images/bg-mobile.jpg");
-    }
+  .welcome {
+    background-image: url("../images/bg-mobile.jpg");
+  }
 
-    .welcome-content {
-        backdrop-filter: none;
-    }
+  .welcome-content {
+    backdrop-filter: none;
+  }
 
-    main {
-        margin: 15px 20px;
-        flex-direction: column;
-        grid-template-columns: 1fr;
-    }
+  main {
+    /* padding-top: 20px; */
+    margin: auto;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
 
-    aside {
-        display: none;
-    }
-}
-
-/* Gradient animasyonu */
-@keyframes color {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
+  aside {
+    display: none;
+  }
 }
