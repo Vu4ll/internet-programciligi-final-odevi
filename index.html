@@ -62,7 +62,7 @@
   <main>
     <div class="container">
       <div class="posts">
-        <section>
+        <!-- <section>
           <article>
             <a href="content/yapay-zekanin-etik-gercekciligi.html" target="_blank">
               <h1>Yapay Zekanın Etik Gerçekçiliği</h1>
@@ -74,7 +74,7 @@
               <h4>Devamını okuyunuz</h4>
             </a>
           </article>
-        </section>
+        </section> -->
 
         <section>
           <article>
@@ -134,12 +134,39 @@
 
         <section>
           <article>
+            <a href="content/ankara.html" target="_blank">
+              <h1>Ankara</h1>
+              <p>
+                Türkiye'nin başkenti ve en büyük ikinci şehri olan Ankara hem siyasi hem de kültürel zenginlikleriyle
+                dikkat çeker. Ankara birçok medeniyete ev sahipliği yapmış ve önemli bir yerleşim...
+              </p>
+              <h4>Devamını okuyunuz</h4>
+            </a>
+          </article>
+        </section>
+
+        <section>
+          <article>
             <a href="content/karaman.html" target="_blank">
               <h1>Karaman</h1>
               <p>
                 İç Anadolu Bölgesi'nde yer alan Karaman 1989 yılına kadar Konya'ya bağlı bir ilçe iken 21 Haziran 1989
                 tarihinde il statüsüne kavuşmuştur ve Türkiye'nin 70. ili olmuştur. Şehir adını Karamanoğulları
                 Beyliği'nin hükümdarlarından...
+              </p>
+              <h4>Devamını okuyunuz</h4>
+            </a>
+          </article>
+        </section>
+
+        <section>
+          <article>
+            <a href="content/samsun.html" target="_blank">
+              <h1>Samsun</h1>
+              <p>
+                Türkiye'nin Karadeniz Bölgesi'nde yer alan tarihi ve doğal güzellikleriyle öne çıkan bir liman şehridir.
+                Mustafa Kemal Atatürk'ün 19 Mayıs 1919'da Samsun'a çıkarak Kurtuluş Savaşı'nı başlattığı yer
+                olmasıyla...
               </p>
               <h4>Devamını okuyunuz</h4>
             </a>
@@ -171,9 +198,9 @@
 
         <aside>
           <h3>İçerikler</h3>
-          <a href="content/yapay-zekanin-etik-gercekciligi.html" target="_blank">
+          <!-- <a href="content/yapay-zekanin-etik-gercekciligi.html" target="_blank">
             Yapay Zekanın Etik Gerçekçiliği
-          </a>
+          </a> -->
 
           <a href="content/amsterdam-schiphol-havalimani.html" target="_blank">
             Amsterdam Schiphol Havalimanı
@@ -185,7 +212,11 @@
 
           <a href="content/efteling.html" target="_blank">Efteling</a>
 
+          <a href="content/ankara.html" target="_blank">Ankara</a>
+
           <a href="content/karaman.html" target="_blank">Karaman</a>
+
+          <a href="content/samsun.html" target="_blank">Samsun</a>
 
           <a href="content/sanliurfa.html" target="_blank">Şanlıurfa</a>
         </aside>
@@ -210,16 +241,16 @@
     <p>&copy; 2024 Salih Abdullah Özler. Tüm hakları saklıdır.</p>
   </footer>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7EJLXRG90"></script>
   <script>
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
-        const nav = document.querySelector("#nav");
-        nav.classList.add("scroll");
-      } else {
-        const nav = document.querySelector("#nav");
-        nav.classList.remove("scroll");
-      }
-    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-R7EJLXRG90");
   </script>
 </body>
 
