@@ -6,6 +6,8 @@
     Web sitesi kaynak koda göre bazı ufak farklılıklar gösterebilir fakat
     çalışma mantığı yine aynı şekildedir ve sorunsuz çalışmaktadır.
     <br> <br>
+    Prag, Brüksel ve Mersin'deki görseller bir arkadaşımdan alınmıştır.
+    <br> <br>
     Salih Abdullah Özler <br>
     237017041
 </p>
